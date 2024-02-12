@@ -1,0 +1,38 @@
+<section>
+<div class="container">
+  <div class="image-div">
+    <img src="https://blackitechs.com/assets/images/avatars/logobitswithoutbg%20(2).png">
+  </div>
+  <form (submit)="onSubmit()">
+    <div class="form-group">
+      <label for="whatsappNumber">Select WhatsApp Number:</label>
+      <select id="whatsappNumber" name="whatsappNumber" class="form-control" [(ngModel)]="formData.selectedNumber">
+        <option value="918056221146">Kamal</option>
+        <option value="918807310429">Ani</option>
+        <option value="919677220546">Venki</option>
+        <option value="917338908955">Dilli</option>
+        <option value="916383162304">Farhad</option>
+        <option value="919941011668">Monisha</option>
+        <option value="919080358767">Alpha</option>
+        <option value="919176577845">Deapak</option>
+        <option value="919344025402">Mugi</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="header">Header:</label>
+      <input type="text" id="header" name="header" class="form-control" [(ngModel)]="formData.header">
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" class="form-control" [(ngModel)]="formData.message"></textarea>
+    </div>
+    <div class="button-div">
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </div>
+  </form>
+</div>
+</section>
+
+
+
+
